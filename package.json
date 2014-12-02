@@ -1,0 +1,14 @@
+{
+  "name": "dojo-js-starter",
+  "version": "0.0.1",
+  "description": "Starter kit JS pour les dojos",
+  "author": "Pierre CLEMENT <pierre.clement@axa.fr>",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/AxaWebCenter/JS-Starter.git"
+  },
+  "dependencies": {
+    "prompt": ">= 0.2.x",
+    "jasmine-node": ">= 0.3.x"
+  }
+}
