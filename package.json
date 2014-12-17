@@ -1,6 +1,6 @@
 {
   "name": "dojo-js-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Starter kit JS pour les dojos",
   "author": "Pierre CLEMENT <pierre.clement@axa.fr>",
   "repository": {
@@ -10,5 +10,8 @@
   "dependencies": {
     "prompt": ">= 0.2.x",
     "jasmine-node": ">= 0.3.x"
+  },
+  "scripts": {
+    "test": "jasmine-node spec"
   }
 }

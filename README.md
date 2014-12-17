@@ -6,32 +6,16 @@ Le but de ce dépôt est de fournir une base pour faire les dojos en Javascript.
 
 Il faut avoir node installé sur la machine.
 
-### Utiliser les paquets nodes globalement (facultatif)
+Pour la suite, il faut utiliser, sous Windows, l'invite de commande node ("Node.js command prompt") **ou** configurer les variables d'environnement avec les valeurs suivantes :
 
-Pour avoir accès aux paquets installés par node globalement dans votre invite de commandes sans devoir se trouver dans le répertoire contenant les paquets, il faut ajouter un dossier dans la variable d’environnement PATH.
-
-Exécutez (Windows + R) :
-
-    control.exe sysdm.cpl,System,3
-
-Cliquez sur "Variable d’environnement". Dans "Variables utilisateur pour [XXXXXX]", cliquez sur "Nouvelle..." (si PATH existe, modifiez-la) avec les infos suivantes :
-
-* Nom : PATH
-* Valeur : %PATH%;%AppData%\npm
-
-Il faudra également ajouter la variable NODE_PATH pour que les scripts node puissent trouver leurs dépendances :
-
-* Nom : NODE_PATH
-* Valeur : %AppData%\npm\node_modules
-
-Redémarrez votre machine pour que les variables soient prises en compte (un peu old school certes, redémarrer votre session doit probablement suffire).
+* **Nom** : PATH, **valeur** : %PATH%;%AppData%\npm
+* **Nom** : NODE_PATH, **valeur** : %AppData%\npm\node_modules
 
 ### Contourner le proxy pour installer les paquets node
 
 Un dépôt interne npm a été mis en place, pour le définir, cherchez dans vos mails, la commande doit ressembler à ça :
 
     npm config set registry http://[....]
-
 
 ## Initialisation
 
@@ -44,18 +28,21 @@ Il suffit d'installer les paquets node configurés dans **package.json**, comme c
 Dans les fichiers suivants :
 
 * **src/dojo.js**: code principal, c'est ici qu'on met l'intelligence du programme
-* **src/main.js**: point d'entrée du script d'exécution, doit appeler le code de **src/dojo.js**
 * **spec/dojo.spec.js**: pour les tests unitaires de **src/dojo.js**, syntaxe jasmine
-	
-## Exécution
-
-Double cliquer sur **main.cmd** ou le runner depuis une invite de commande.
+* **src/main.js**: point d'entrée du script d'exécution, doit appeler le code de **src/dojo.js**
 
 ## Exécuter les TU
 
-Double cliquer sur **test.cmd** ou le runner depuis une invite de commande.
+Lancer la commande suivante :
 
-En invite de commande, lancer avec l'option --autotest pour lancer automatiquement
-les tests à chaque modif sur les fichiers de src et de spec :
+    npm test
+	
+Pour lancer les tests automatiquement à chaque modification du fichier, lancer la commande suivante :
 
-    test.cmd --autotest
+    node node_modules\jasmine-node\bin\jasmine-node spec --watch src --autotest
+	
+## Exécution
+
+Dans l'invite de commande node, lancer la commande suivante :
+
+    node src\main.js
