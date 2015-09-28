@@ -1,17 +1,18 @@
 {
   "name": "dojo-js-starter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Starter kit JS pour les dojos",
   "author": "Pierre CLEMENT <pierre.clement@axa.fr>",
   "repository": {
-	"type": "git",
-	"url": "https://github.com/AxaWebCenter/JS-Starter.git"
+    "type": "git",
+    "url": "https://github.com/AxaWebCenter/JS-Starter.git"
   },
-  "dependencies": {
-    "prompt": ">= 0.2.x",
-    "jasmine-node": ">= 0.3.x"
-  },
-  "scripts": {
-    "test": "jasmine-node spec"
+  "dependencies": {},,
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.10",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18"
   }
 }

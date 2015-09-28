@@ -1,48 +1,33 @@
-# JS Starter Kit
+ï»¿# JS Starter Kit
 
-Le but de ce dépôt est de fournir une base pour faire les dojos en Javascript.
+Le but de ce dÃ©pÃ´t est de fournir une base pour faire les dojos en Javascript.
 
-## Prérequis
+## PrÃ©requis
 
-Il faut avoir node installé sur la machine.
-
-Pour la suite, il faut utiliser, sous Windows, l'invite de commande node ("Node.js command prompt") **ou** configurer les variables d'environnement avec les valeurs suivantes :
-
-* **Nom** : PATH, **valeur** : %PATH%;%AppData%\npm
-* **Nom** : NODE_PATH, **valeur** : %AppData%\npm\node_modules
+* `node` installÃ©
+* `karma-cli` installÃ© (une fois node installÃ©, `npm install -g karma-cli`)
 
 ### Contourner le proxy pour installer les paquets node
 
-Un dépôt interne npm a été mis en place, pour le définir, cherchez dans vos mails, la commande doit ressembler à ça :
+Un dÃ©pÃ´t interne npm a Ã©tÃ© mis en place, pour le dÃ©finir, cherchez dans vos mails, la commande doit ressembler Ã  Ã§a :
 
     npm config set registry http://[....]
 
 ## Initialisation
 
-Il suffit d'installer les paquets node configurés dans **package.json**, comme ceci :
+Normalement tout est inclus dans le package. Sinon, il suffit d'installer les paquets node configurÃ©s dans `package.json`, comme ceci :
 
     npm install
 
-## Où ajouter mon code ?
+## OÃ¹ ajouter mon code ?
 
 Dans les fichiers suivants :
 
 * **src/dojo.js**: code principal, c'est ici qu'on met l'intelligence du programme
-* **spec/dojo.spec.js**: pour les tests unitaires de **src/dojo.js**, syntaxe jasmine
-* **src/main.js**: point d'entrée du script d'exécution, doit appeler le code de **src/dojo.js**
+* **tests/dojo.spec.js**: pour les tests unitaires de **src/dojo.js**, syntaxe jasmine
 
-## Exécuter les TU
+## ExÃ©cuter les TU
 
 Lancer la commande suivante :
 
     npm test
-	
-Pour lancer les tests automatiquement à chaque modification du fichier, lancer la commande suivante :
-
-    node node_modules\jasmine-node\bin\jasmine-node spec --watch src --autotest
-	
-## Exécution
-
-Dans l'invite de commande node, lancer la commande suivante :
-
-    node src\main.js
