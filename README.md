@@ -30,4 +30,4 @@ Dans les fichiers suivants :
 
 Lancer la commande suivante :
 
-    npm test
+    karma start

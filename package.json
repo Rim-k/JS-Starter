@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/AxaWebCenter/JS-Starter.git"
   },
-  "dependencies": {},,
+  "dependencies": {},
   "devDependencies": {
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.10",
