@@ -34,10 +34,10 @@ Lancer la commande suivante :
 
 Le résultat attendu est :
 
-    05 10 2015 14:30:37.577:WARN [karma]: No captured browser, open http://localhost:9876/
-    05 10 2015 14:30:37.591:INFO [karma]: Karma v0.13.10 server started at http://localhost:9876/
-    05 10 2015 14:30:37.613:INFO [launcher]: Starting browser PhantomJS
-    05 10 2015 14:30:38.831:INFO [PhantomJS 1.9.8 (Windows 7 0.0.0)]: Connected on socket KgxRql5uow_nAJH6AAAA with id 99370867
-    .
-    **PhantomJS 1.9.8 (Windows 7 0.0.0): Executed 1 of 1 SUCCESS (0.002 secs / 0.002 secs)**
-
+<pre>
+05 10 2015 14:30:37.577:WARN [karma]: No captured browser, open http://localhost:9876/
+05 10 2015 14:30:37.591:INFO [karma]: Karma v0.13.10 server started at http://localhost:9876/
+05 10 2015 14:30:37.613:INFO [launcher]: Starting browser PhantomJS
+05 10 2015 14:30:38.831:INFO [PhantomJS 1.9.8 (Windows 7 0.0.0)]: Connected on socket KgxRql5uow_nAJH6AAAA with id 99370867.
+<b>PhantomJS 1.9.8 (Windows 7 0.0.0): Executed 1 of 1 SUCCESS (0.002 secs / 0.002 secs)</b>
+</pre>
